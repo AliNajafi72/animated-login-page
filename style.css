@@ -29,6 +29,7 @@ body {
   display: flex;
   position: relative;
   overflow: hidden;
+  justify-content: center;
 }
 
 .form-container {
@@ -58,4 +59,67 @@ body {
   to {
     transform: rotate(360deg);
   }
+}
+
+.logo {
+  fill: white;
+}
+
+.animation-container svg {
+  position: absolute;
+  align-self: center;
+}
+
+@keyframes circlesAnimation {
+  0% {
+    opacity: 0;
+    transform: scale(0, 0);
+  }
+  50% {
+    opacity: 0.3;
+    transform: scale(40, 40);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(80, 80);
+  }
+}
+
+.circle-one {
+  transform-origin: center;
+  animation-name: circlesAnimation;
+  animation-duration: 2s;
+  fill: white;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.circle-two {
+  transform-origin: center;
+  animation-name: circlesAnimation;
+  animation-duration: 2s;
+  fill: white;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 500ms;
+}
+
+.circle-three {
+  transform-origin: center;
+  animation-name: circlesAnimation;
+  animation-duration: 2s;
+  fill: white;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+}
+
+.circle-four {
+  transform-origin: center;
+  animation-name: circlesAnimation;
+  animation-duration: 2s;
+  fill: white;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 1500ms;
 }
