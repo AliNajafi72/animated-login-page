@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./style.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
     <title>Antivirus</title>
   </head>
   <body>
@@ -70,8 +71,46 @@
         <svg class="circle-four" height="5" width="5">
           <circle cx="2.5" cy="2.5" r="2.5" />
         </svg>
+        <svg class="circle-five" height="5" width="5">
+          <circle cx="2.5" cy="2.5" r="2.5" />
+        </svg>
+        <svg class="circle-six" height="5" width="5">
+          <circle cx="2.5" cy="2.5" r="2.5" />
+        </svg>
+        <h1 class="antivirus-header">آنتی ویروس</h1>
       </div>
-      <div class="form-container"></div>
+      <div class="form-container">
+        <div class="d-flex flex-column form-inner-container align-text-end">
+          <span>ورود</span>
+          <div>
+            <h1>ورود به حساب کاربری</h1>
+            <span class="form-description">
+              جهت ورود به برنامه نام کاربری و رمز عبور خود را وارد نمائید
+            </span>
+          </div>
+          <form class="d-flex flex-column login-form">
+            <input
+              class="form-text-input"
+              type="text"
+              placeholder="نام کاربری"
+            />
+            <input class="form-text-input" type="text" placeholder="رمز عبور" />
+            <div class="d-flex captcha-code-container">
+              <img
+                class="captcha-image"
+                src="./img/captcha.png"
+                alt="Captcha Code"
+              />
+              <input
+                type="text"
+                class="captcha-input form-text-input"
+                placeholder="کد امنیتی"
+              />
+            </div>
+            <input class="form-button" type="submit" value="ورود" />
+          </form>
+        </div>
+      </div>
     </div>
   </body>
 </html>

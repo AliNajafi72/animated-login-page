@@ -34,6 +34,7 @@ body {
 
 .form-container {
   flex: 50%;
+  padding: 2%;
 }
 
 .logo-and-triangle {
@@ -63,6 +64,7 @@ body {
 
 .logo {
   fill: white;
+  z-index: 999;
 }
 
 .animation-container svg {
@@ -76,12 +78,12 @@ body {
     transform: scale(0, 0);
   }
   50% {
-    opacity: 0.3;
-    transform: scale(40, 40);
+    opacity: 0.2;
+    transform: scale(60, 60);
   }
   100% {
     opacity: 0;
-    transform: scale(80, 80);
+    transform: scale(120, 120);
   }
 }
 
@@ -92,6 +94,8 @@ body {
   fill: white;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+  opacity: 0;
+  z-index: 1;
 }
 
 .circle-two {
@@ -101,7 +105,9 @@ body {
   fill: white;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  animation-delay: 500ms;
+  animation-delay: 200ms;
+  opacity: 0;
+  z-index: 1;
 }
 
 .circle-three {
@@ -111,7 +117,9 @@ body {
   fill: white;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  animation-delay: 1s;
+  animation-delay: 400ms;
+  opacity: 0;
+  z-index: 1;
 }
 
 .circle-four {
@@ -121,5 +129,105 @@ body {
   fill: white;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  animation-delay: 1500ms;
+  animation-delay: 600ms;
+  opacity: 0;
+  z-index: 1;
+}
+
+.circle-five {
+  transform-origin: center;
+  animation-name: circlesAnimation;
+  animation-duration: 2s;
+  fill: white;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 800ms;
+  opacity: 0;
+  z-index: 1;
+}
+.circle-six {
+  transform-origin: center;
+  animation-name: circlesAnimation;
+  animation-duration: 2s;
+  fill: white;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 1000ms;
+  opacity: 0;
+  z-index: 1;
+}
+
+.antivirus-header {
+  position: absolute;
+  color: white;
+  font-size: 1em;
+  top: 55%;
+  text-shadow: 0px 1px 3px gray;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.form-inner-container span:first-child {
+  color: dodgerblue;
+}
+
+.align-text-end {
+  text-align: end;
+  font-weight: bold;
+}
+
+.form-inner-container h1 {
+  font-size: 1.2em;
+}
+
+.form-description {
+  color: gray;
+  font-size: 0.8em;
+}
+
+.form-text-input {
+  text-align: end;
+  font-size: 1em;
+  background-color: #e2e2e2;
+  border: none;
+  border-bottom: 2px solid gray;
+  outline: none;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.captcha-input {
+  flex-grow: 1;
+  align-self: flex-end;
+}
+
+.captcha-image {
+  width: 200px;
+  padding-right: 5px;
+}
+
+.form-button {
+  background-color: dodgerblue;
+  border: none;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.login-form {
+  flex-grow: 0.3;
+  justify-content: space-around;
+}
+
+.form-inner-container {
+  height: 70%;
+  justify-content: space-evenly;
 }
